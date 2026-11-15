@@ -19,6 +19,11 @@ Open **http://localhost:5173**
 
 To persist data, set `MONGODB_URI` in `server/.env` (see `.env.example`) and run `npm run seed`.
 
+## Live demo (GitHub Pages)
+**https://aamani2702.github.io/full-stack-project/** - the React client is deployed by `.github/workflows/deploy-pages.yml` on every push to `main`; the API runs on Render.
+
+To enable it: repo **Settings -> Pages -> Source: GitHub Actions**, add the repository variable `VITE_API_URL` (your Render API URL ending in `/api`), and set `CLIENT_ORIGIN=https://aamani2702.github.io` on Render. Details in `docs/deployment.md`.
+
 ## Module map
 | Module | Where |
 |---|---|
@@ -41,4 +46,4 @@ To persist data, set `MONGODB_URI` in `server/.env` (see `.env.example`) and run
 `GET/POST /api/posts` · `PUT/DELETE /api/posts/:id` (owner or admin)
 
 ## Deliverables still to produce by hand
-Screenshots, Postman screenshots, the PDF report, the live URL and your GitHub repo link. This folder is not a git repository.
+Screenshots, Postman screenshots, the PDF report, the live URL and your GitHub repo link.

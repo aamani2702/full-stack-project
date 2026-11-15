@@ -10,7 +10,12 @@ const { notFound, errorHandler } = require('./src/middleware/error');
 const app = express();
 
 app.use(helmet());
-app.use(cors({ origin: (process.env.CLIENT_ORIGIN || 'http://localhost:5173').split(',') }));
+// CLIENT_ORIGIN: comma-separated origins only (no path), e.g. https://aamani2702.github.io
+const allowedOrigins = (process.env.CLIENT_ORIGIN || 'http://localhost:5173')
+  .split(',')
+  .map((o) => o.trim().replace(/\/+$/, ''))
+  .filter(Boolean);
+app.use(cors({ origin: allowedOrigins }));
 app.use(express.json({ limit: '100kb' }));
 app.use(morgan('dev'));
 
