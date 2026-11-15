@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bloom &amp; Co. - plants for every home">
+  <title>Sign up | Bloom &amp; Co.</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="logo" href="index.html">🌿 Bloom <span>&amp;</span> Co.</a>
+    <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav id="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="tools.html">Tools</a>
+      <a href="signup.html" class="pill">Sign up / Log in</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+  <section class="wrap narrow">
+    <h1>Sign up</h1>
+    <form id="signupForm" class="form" novalidate>
+      <label>Full name <input type="text" id="sName"></label><small class="err" data-for="sName"></small>
+      <label>Email <input type="email" id="sEmail"></label><small class="err" data-for="sEmail"></small>
+      <label>Password <input type="password" id="sPass"></label><small class="err" data-for="sPass"></small>
+      <label>Country
+        <select id="sCountry"><option value="">Choose…</option><option>India</option><option>USA</option><option>UK</option></select>
+      </label><small class="err" data-for="sCountry"></small>
+      <fieldset><legend>Interest</legend>
+        <label class="inline"><input type="radio" name="interest" value="Indoor" checked> Indoor</label>
+        <label class="inline"><input type="radio" name="interest" value="Herbs"> Herbs</label>
+      </fieldset>
+      <label class="inline"><input type="checkbox" id="sTerms"> I accept the terms</label><small class="err" data-for="sTerms"></small>
+      <button class="btn" type="submit">Create account</button>
+      <p>Already a member? <a href="login.html">Log in</a></p>
+    </form>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Bloom &amp; Co. &middot; Modules 1&ndash;5 static site</p>
+  </div>
+</footer>
+</body>
+</html>

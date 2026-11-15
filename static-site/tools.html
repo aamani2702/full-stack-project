@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bloom &amp; Co. - plants for every home">
+  <title>Tools | Bloom &amp; Co.</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="logo" href="index.html">🌿 Bloom <span>&amp;</span> Co.</a>
+    <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav id="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="tools.html">Tools</a>
+      <a href="signup.html" class="pill">Sign up / Log in</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+  <section class="wrap">
+    <h1>Interactive tools</h1>
+    <p>Built with DOM manipulation: a to-do list and a calculator.</p>
+    <div class="two">
+      <div class="panel">
+        <h2>Plant care to-do</h2>
+        <form id="todoForm" class="row"><input id="todoInput" placeholder="e.g. Water the monstera" aria-label="New task"><button class="btn">Add</button></form>
+        <p id="todoCount" class="muted"></p>
+        <ul id="todoList" class="todo"></ul>
+      </div>
+      <div class="panel">
+        <h2>Calculator</h2>
+        <input id="calcDisplay" class="calc-display" value="0" readonly aria-label="Display">
+        <div id="calcKeys" class="keys"></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Bloom &amp; Co. &middot; Modules 1&ndash;5 static site</p>
+  </div>
+</footer>
+</body>
+</html>

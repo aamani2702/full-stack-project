@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Bloom &amp; Co. (Bootstrap)</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="custom.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">🌿 Bloom <span class="text-accent">&amp;</span> Co.</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container py-5">
+  <h1 class="fw-bold">About Bloom &amp; Co.</h1>
+  <p class="lead text-secondary col-lg-8">We believe every home is better with something alive in it.</p>
+  <div class="row g-4 my-3">
+    <div class="col-md-4"><div class="card h-100 p-4 text-center"><div class="fs-1">🌳</div><h5>Our roots</h5><p class="text-secondary mb-0">Started on a sunny balcony with three cuttings.</p></div></div>
+    <div class="col-md-4"><div class="card h-100 p-4 text-center"><div class="fs-1">🤝</div><h5>Our promise</h5><p class="text-secondary mb-0">Healthy plants or your money back.</p></div></div>
+    <div class="col-md-4"><div class="card h-100 p-4 text-center"><div class="fs-1">♻️</div><h5>Our planet</h5><p class="text-secondary mb-0">Plastic-free packaging, peat-free soil.</p></div></div>
+  </div>
+  <h2 class="mt-5">Bootstrap features used</h2>
+  <div class="accordion" id="acc">
+    <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#a1">Grid system</button></h3><div id="a1" class="accordion-collapse collapse show" data-bs-parent="#acc"><div class="accordion-body">row / col-* classes make the layout responsive from phone to desktop.</div></div></div>
+    <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#a2">Components</button></h3><div id="a2" class="accordion-collapse collapse" data-bs-parent="#acc"><div class="accordion-body">Navbar, cards, buttons, modal, accordion and form validation.</div></div></div>
+  </div>
+</main>
+
+<footer class="bg-bloom-dark text-light py-4 mt-5"><div class="container">&copy; 2026 Bloom &amp; Co.</div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

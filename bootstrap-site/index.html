@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Bloom &amp; Co. (Bootstrap)</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="custom.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">🌿 Bloom <span class="text-accent">&amp;</span> Co.</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><button class="btn btn-bloom rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</button></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero text-center text-lg-start">
+  <div class="container py-5">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <span class="badge text-bg-success-subtle text-success-emphasis rounded-pill mb-3">New season arrivals</span>
+        <h1 class="display-4 fw-bold">Bring a little <em class="text-bloom">green</em> into every room.</h1>
+        <p class="lead text-secondary">Healthy houseplants and honest care advice - redesigned with the Bootstrap 5 grid, cards, modals and navbar.</p>
+        <a href="#plants" class="btn btn-bloom btn-lg rounded-pill me-2">Shop plants</a>
+        <a href="contact.html" class="btn btn-outline-success btn-lg rounded-pill">Contact</a>
+      </div>
+      <div class="col-lg-6">
+        <img class="img-fluid hero-img shadow" src="https://images.unsplash.com/photo-1463320726281-696a485928c7?auto=format&amp;fit=crop&amp;w=900&amp;q=75" alt="Houseplants on a shelf">
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="plants" class="container py-5">
+  <h2 class="fw-bold mb-4">Popular plants</h2>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+    <div class="col"><div class="card h-100 shadow-sm"><img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&amp;fit=crop&amp;w=600&amp;q=70" class="card-img-top" alt="Monstera"><div class="card-body"><h5 class="card-title">Monstera</h5><p class="card-text text-secondary">Bold split leaves, easy care.</p></div><div class="card-footer bg-white d-flex justify-content-between align-items-center"><strong>$34</strong><a href="#" class="btn btn-sm btn-bloom rounded-pill">Add</a></div></div></div>
+    <div class="col"><div class="card h-100 shadow-sm"><img src="https://images.unsplash.com/photo-1593482892290-f54927ae1bb6?auto=format&amp;fit=crop&amp;w=600&amp;q=70" class="card-img-top" alt="Snake plant"><div class="card-body"><h5 class="card-title">Snake Plant</h5><p class="card-text text-secondary">Thrives on neglect.</p></div><div class="card-footer bg-white d-flex justify-content-between align-items-center"><strong>$22</strong><a href="#" class="btn btn-sm btn-bloom rounded-pill">Add</a></div></div></div>
+    <div class="col"><div class="card h-100 shadow-sm"><img src="https://images.unsplash.com/photo-1596547609652-9cf5d8d76921?auto=format&amp;fit=crop&amp;w=600&amp;q=70" class="card-img-top" alt="Aloe vera"><div class="card-body"><h5 class="card-title">Aloe Vera</h5><p class="card-text text-secondary">Sunny, soothing, useful.</p></div><div class="card-footer bg-white d-flex justify-content-between align-items-center"><strong>$15</strong><a href="#" class="btn btn-sm btn-bloom rounded-pill">Add</a></div></div></div>
+    <div class="col"><div class="card h-100 shadow-sm"><img src="https://images.unsplash.com/photo-1566836610593-62a64888a216?auto=format&amp;fit=crop&amp;w=600&amp;q=70" class="card-img-top" alt="Orchid"><div class="card-body"><h5 class="card-title">Orchid</h5><p class="card-text text-secondary">Graceful, long-lasting blooms.</p></div><div class="card-footer bg-white d-flex justify-content-between align-items-center"><strong>$42</strong><a href="#" class="btn btn-sm btn-bloom rounded-pill">Add</a></div></div></div>
+  </div>
+</section>
+
+<footer class="bg-bloom-dark text-light py-4 mt-5">
+  <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+    <span>&copy; 2026 Bloom &amp; Co. - Module 6 Bootstrap edition</span>
+    <span><a class="link-light" href="about.html">About</a> &middot; <a class="link-light" href="contact.html">Contact</a></span>
+  </div>
+</footer>
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <form class="modal-content needs-validation" novalidate>
+      <div class="modal-header"><h5 class="modal-title" id="loginTitle">Welcome back</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+      <div class="modal-body">
+        <div class="mb-3"><label for="mEmail" class="form-label">Email</label><input type="email" class="form-control" id="mEmail" required><div class="invalid-feedback">Enter a valid email.</div></div>
+        <div class="mb-3"><label for="mPass" class="form-label">Password</label><input type="password" class="form-control" id="mPass" minlength="8" required><div class="invalid-feedback">At least 8 characters.</div></div>
+      </div>
+      <div class="modal-footer"><button type="submit" class="btn btn-bloom w-100">Log in</button></div>
+    </form>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Bootstrap validation styles
+  document.querySelectorAll('.needs-validation').forEach((f) =>
+    f.addEventListener('submit', (e) => { if (!f.checkValidity()) { e.preventDefault(); e.stopPropagation(); } f.classList.add('was-validated'); }));
+</script>
+</body>
+</html>
