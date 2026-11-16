@@ -31,6 +31,10 @@ jobs:
         run: |
           npm ci
           npm run build
+      - name: Add static-site and bootstrap-site to the Pages artifact
+        run: |
+          cp -r static-site client/dist/static-site
+          cp -r bootstrap-site client/dist/bootstrap-site
       - uses: actions/upload-pages-artifact@v3
         with:
           path: client/dist

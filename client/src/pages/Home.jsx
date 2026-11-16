@@ -63,7 +63,7 @@ export default function Home() {
           </div>
           <div className="hero__art">
             <div className="blob" />
-            <img src="https://images.unsplash.com/photo-1463320726281-696a485928c7?auto=format&fit=crop&w=900&q=75" alt="Lush houseplants by a window" />
+            <img src="https://images.unsplash.com/photo-1545239705-1564e58b9e4a?auto=format&fit=crop&w=900&q=75" alt="Fiddle-leaf fig houseplant in a white pot" />
             <div className="float float--a"><span>🚚</span><div><strong>Free delivery</strong><small>orders over $50</small></div></div>
             <div className="float float--b"><span>⭐</span><div><strong>4.9 rating</strong><small>2,000+ happy growers</small></div></div>
           </div>
